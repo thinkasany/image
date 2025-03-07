@@ -35,8 +35,8 @@ export interface ImagePreviewType
   getContainer?: GetContainer | false;
   mask?: React.ReactNode;
   maskClassName?: string;
-  classNames?: Partial<Record<SemanticName, string>>;
-  styles?: Partial<Record<SemanticName, React.CSSProperties>>;
+  classNames?: Partial<Record<PreviewSemanticName, string>>;
+  styles?: Partial<Record<PreviewSemanticName, React.CSSProperties>>;
   icons?: PreviewProps['icons'];
   scaleStep?: number;
   movable?: boolean;
@@ -52,6 +52,7 @@ export interface ImagePreviewType
 }
 
 export type SemanticName = 'root' | 'actions' | 'mask';
+export type PreviewSemanticName = 'root' | 'actions' | 'mask';
 
 export interface ImageProps
   extends Omit<React.ImgHTMLAttributes<HTMLImageElement>, 'placeholder' | 'onClick'> {
