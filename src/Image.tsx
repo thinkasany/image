@@ -52,7 +52,7 @@ export interface ImagePreviewType
 }
 
 export type SemanticName = 'root' | 'actions' | 'mask';
-export type PreviewSemanticName = 'root' | 'actions' | 'mask';
+export type PreviewSemanticName = 'actions' | 'mask';
 
 export interface ImageProps
   extends Omit<React.ImgHTMLAttributes<HTMLImageElement>, 'placeholder' | 'onClick'> {
